@@ -1,1 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: url(marriagepic.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding: 50px;
+}
 
+h1 {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: #ff4081;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  background: #d81b60;
+  transform: scale(1.05);
+}
