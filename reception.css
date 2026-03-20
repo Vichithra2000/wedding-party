@@ -1,33 +1,71 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
-  background: url("./marriage.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5e6d3;
 }
 
-h1 {
-  color: #333;
-  margin-bottom: 40px;
+/* Card container */
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
 }
 
+/* Image */
+.invite-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons */
 .btn {
-  display: inline-block;
-  margin: 15px;
-  padding: 15px 40px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  background: #ff4081;
+  position: absolute;
+  padding: 2% 4%;
+  font-size: 3vw;   /* responsive text */
   border: none;
-  border-radius: 10px;
+  border-radius: 25px;
+  background: #c88a5b;
+  color: white;
   cursor: pointer;
-  transition: transform 0.2s, background 0.3s;
 }
 
 .btn:hover {
-  background: #d81b60;
-  transform: scale(1.05);
+  background: #a66d44;
 }
+
+/* 📍 Responsive positions (percentage-based) */
+.temple {
+  top: 25%;
+  left: 0.5%;
+}
+
+.wedding {
+  top: 50%;
+  right: 1%;
+}
+
+.reception {
+  bottom: 8%;
+  left: 0.5%;
+}
+
+/* 📱 Extra small devices */
+@media (max-width: 480px) {
+  .btn {
+    font-size: 4vw;
+    padding: 3% 5%;
+  }
+}
+
+/* 💻 Tablets */
+@media (min-width: 768px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+  
